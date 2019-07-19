@@ -1,0 +1,17 @@
+{
+    "name": "pxt-cck",
+    "version": "0.0.1",
+    "description": "Blocks for Creative Computing Kids",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "motors.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
