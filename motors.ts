@@ -59,14 +59,14 @@ namespace cck {
         }
 
         //% weight=98 help=servos/run_for
-        //% blockId=servoservorunf bblock="연속모터 %servo 반시계방향 돌리기"
+        //% blockId=servoservorunf block="연속모터 %servo 반시계방향 돌리기"
         //% parts=microservo trackArgs=0
         run_for(speed: number): void {
             this.setAngle(this._maxAngle);
         }
 
         //% weight=97 help=servos/run_back
-        //% blockId=servoservorunb bblock="연속모터 %servo 시계방향 돌리기"
+        //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
         //% parts=microservo trackArgs=0
         run_back(speed: number): void {
             this.setAngle(this._minAngle);
