@@ -58,7 +58,6 @@ namespace cck {
                 this.setAngle(degrees);
         }
 
-        //% weight=98 help=servos/run_for
         //% blockId=servoservorunf block="연속모터 %servo 반시계방향 돌리기"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
@@ -68,7 +67,6 @@ namespace cck {
             this.setAngle(this._maxAngle);
         }
 
-        //% weight=97 help=servos/run_back
         //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
