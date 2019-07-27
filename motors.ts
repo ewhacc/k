@@ -58,6 +58,20 @@ namespace cck {
                 this.setAngle(degrees);
         }
 
+        //% weight=98 help=servos/run_for
+        //% blockId=servoservorun block="연속모터 %servo 반시계방향 돌리기"
+        //% parts=microservo trackArgs=0
+        run_for(speed: number): void {
+            this.setAngle(this._maxAngle);
+        }
+
+        //% weight=97 help=servos/run_back
+        //% blockId=servoservorun block="연속모터 %servo 시계방향 돌리기"
+        //% parts=microservo trackArgs=0
+        run_back(speed: number): void {
+            this.setAngle(this._minAngle);
+        }
+
         /**
          * Stop sending commands to the servo so that its rotation will stop at the current position.
          */
