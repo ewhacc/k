@@ -45,7 +45,6 @@ namespace cck {
          */
         //% weight=99 help=servos/run
         //% blockId=servoservorun block="연속모터 %servo 속도를 %speed=speedPicker \\%"
-        //% speed.defl=100
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
         //% servo.fieldOptions.columns=2
