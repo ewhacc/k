@@ -78,15 +78,6 @@ namespace cck {
                 this.setAngle(this._minAngle);
         }
 
-        //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
-        //% servo.fieldEditor="gridpicker"
-        //% servo.fieldOptions.width=220
-        //% servo.fieldOptions.columns=2
-        //% parts=microservo trackArgs=0
-        run_back(): void {
-            this.setAngle(this._minAngle);
-        }
-
         /**
          * Stop sending commands to the servo so that its rotation will stop at the current position.
          */
