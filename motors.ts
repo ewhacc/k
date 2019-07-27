@@ -60,15 +60,21 @@ namespace cck {
 
         //% weight=98 help=servos/run_for
         //% blockId=servoservorunf block="연속모터 %servo 반시계방향 돌리기"
+        //% servo.fieldEditor="gridpicker"
+        //% servo.fieldOptions.width=220
+        //% servo.fieldOptions.columns=2
         //% parts=microservo trackArgs=0
-        run_for(speed: number): void {
+        run_for(): void {
             this.setAngle(this._maxAngle);
         }
 
         //% weight=97 help=servos/run_back
         //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
+        //% servo.fieldEditor="gridpicker"
+        //% servo.fieldOptions.width=220
+        //% servo.fieldOptions.columns=2
         //% parts=microservo trackArgs=0
-        run_back(speed: number): void {
+        run_back(): void {
             this.setAngle(this._minAngle);
         }
 
