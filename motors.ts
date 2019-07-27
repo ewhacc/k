@@ -72,7 +72,7 @@ namespace cck {
         //% dir.fieldEditor="gridpicker"
         //% parts=microservo trackArgs=0
         run_for(dir: MoDir): void {
-            if(dir == CCW)
+            if(dir == MoDir.CCW)
                 this.setAngle(this._maxAngle);
             else
                 this.setAngle(this._minAngle);
