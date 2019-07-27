@@ -58,13 +58,24 @@ namespace cck {
                 this.setAngle(degrees);
         }
 
-        //% blockId=servoservorunf block="연속모터 %servo 반시계방향 돌리기"
+        enum Modir {
+            //% block="반시계방향"
+            CCW, 
+            //% block="시계방향p"
+            CW 
+        }
+
+        //% blockId=servoservorunf block="연속모터 %servo #dir 돌리기"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
         //% servo.fieldOptions.columns=2
+        //% dir.fieldEditor="gridpicker"
         //% parts=microservo trackArgs=0
-        run_for(): void {
-            this.setAngle(this._maxAngle);
+        run_for(dir: MoDir): void {
+            if(dir == CCW)
+                this.setAngle(this._maxAngle);
+            else
+                this.setAngle(this._minAngle);
         }
 
         //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
