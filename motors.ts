@@ -44,7 +44,7 @@ namespace cck {
          * @param speed the throttle of the motor from -100% to 100%
          */
         //% weight=99 help=servos/run
-        // % blockId=servoservorun block="연속모터 %servo 속도를 %speed=speedPicker \\%"
+        //% blockId=servoservorun block="연속모터 %servo 속도를 %speed=speedPicker \\%"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
         //% servo.fieldOptions.columns=2
